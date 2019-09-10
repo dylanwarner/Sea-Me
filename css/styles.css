@@ -1,0 +1,130 @@
+#wrapper {
+    margin: auto;
+    width: 1024px;
+}
+
+body {
+    line-height: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sea {
+    color: #3F75FE;
+}
+
+p {
+    font-size: 11px;
+    color: black;
+}
+
+#head_text {
+    padding-bottom: 5px;
+}
+
+button {
+    border-color: #3F75FE;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #3F75FE;
+    color: black;
+}
+
+#scene {
+    margin-top: 20px;
+    width: 1024px;
+    height: 70%;
+    border-radius: 8px;
+    text-align: center;
+    background-image: url('animals/scene.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+img {
+}
+
+#animals {
+
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: 124px;
+    height: 130px;
+    margin-right: 35px;
+    float: left;
+    text-align: center;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 2px;
+}
+
+h3 {
+    color: #3F75FE;
+}
+
+#main {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#canvas-drop-area{
+    display:none;
+    position: absolute;
+    top:14px;
+    width:800px;
+    height:450px;
+    background:transparent;
+}
+
+#canvas-drop-area.active{
+    display:block;
+    border: 1px solid red;
+}
+
+#image-list{
+    margin: 0px;
+    padding: 0px;
+    float:center;
+    width:150px;
+}
+#image-list li{
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 2px dashed #000;
+    cursor:move;
+}
+.draggable-image{
+    width: 150px;
+    max-height: 175px;
+    float:left;
+}

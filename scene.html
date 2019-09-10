@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sea Me</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery-ui-1.9.2.custom.min.js"></script> 
+        <script src="js/fabric.0.9.15.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--  https://github.com/goldfire/howler.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
+
+        <div id="wrapper">
+            <div id="content">
+                <div id="reset_div">
+                    <button id="reset" onClick="document.location.reload(true)">Reset</button>
+                </div>
+                <canvas id="canvas" width="1024" height="680">
+                    Canvas not supported in your browser!
+                </canvas>
+            <div id="head_text">
+            <h3>Make a song</h3>
+            <h2>Drag and drop a sea animal</h2>
+
+                <div id="canvas-drop-area"></div>
+            </div>
+
+            <div class="table">
+            <ul id="image-list">
+                <li><p>Bernard</p><img src="animals/crab.png" class="draggable-image"></li>
+                <li><p>Bubbles</p><img src="animals/dolphin.png" class="draggable-image"></li>
+                <li><p>Wayne</p><img src="animals/seahorse.png" class="draggable-image"></li>
+                <li><p>Trevor</p><img src="animals/starfish.png" class="draggable-image"></li>
+                <li><p>Squirt</p><img src="animals/turtle.png" class="draggable-image"></li>
+                <li><p>Marvin</p><img src="animals/whale.png" class="draggable-image"></li>
+            </ul>
+            </div>
+        </div>
+               <section id="audioControls">
+            <audio controls autoplay>
+            <source src="media/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+</audio>
+        </section>
+        <script src="js/main.js"></script>
+    </body>
+</html>

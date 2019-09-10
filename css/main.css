@@ -1,0 +1,94 @@
+#wrapper{
+    margin: auto;
+    width: 1024px;
+    padding: 5px;
+    overflow: hidden;
+}
+#content{
+    float:left;
+}
+
+body {
+    line-height: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    color: #3F75FE;
+}
+
+#reset_div {
+    width: 100%;
+    height: 20px;
+}
+
+#reset {
+    float: right;
+    border-color: #3F75FE;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #3F75FE;
+}
+
+#canvas{
+    margin-top: 5px;
+    width: 1024px;
+    height: 70%;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    background:url('../animals/scene.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#canvas-drop-area{
+    display:none;
+    position: absolute;
+    top:13px;
+    width:1024px;
+    height:680px;
+    background:url('../animals/scene2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#canvas-drop-area.active{
+    display:block;
+    border: 1px solid red;
+}
+
+#image-list{
+    margin: 0px;
+    padding: 0px;
+}
+#image-list li{
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    cursor:move;
+}
+ul#image-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+
+	ul#image-list li {
+        display: table;
+        float: left;
+        text-align: center;
+        padding-right: 20px;
+	}
+
+.draggable-image{
+    width: 150px;
+    max-height: 175px;
+    float:left;
+}
+
+#audioControls {
+    display: none;
+}
